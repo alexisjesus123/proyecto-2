@@ -1,0 +1,196 @@
+body {
+
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto de Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo general */
+    background-image: url('imagenes/fondo_img.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-blend-mode: multiply; /* Mezcla la imagen con el color de fondo */
+
+
+}
+::content{
+    width: 200px;
+}
+
+/* Encabezado */
+header {
+    
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 0px; /* Bordes redondeados */
+    margin: 10px auto; /* Márgenes superior e inferior, centrado horizontal */
+    width: 80%; /* Ancho del encabezado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+img{
+
+text-align: left
+}
+header .logo img {
+    max-height: 80px; /* Altura máxima del logo */
+    border-radius: 50px;
+    width: 40;
+  
+}
+
+header h1 {
+    color: #3fa6cf; /* Color del título */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: end;
+}
+
+header .autor {
+    font-size: 0.9em; /* Tamaño de la fuente del autor */
+    font-style: italic; /* Estilo itálica */
+    color: #000000; /* Color del texto del autor */
+    margin-top: 20px;
+    text-align: end;
+
+}
+
+/* Sección Introducción */
+.introduccion {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    text-align: center;
+}
+
+
+
+/* Sección Definiciones y Analogía (Flexbox) */
+.definiciones,
+.analogia {
+    display: flex; /* Usar Flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+.definicion,
+.analogia-item {
+    flex:1 1 110px;
+    /* Mínimo 300px, se ajusta según el espacio */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+   
+}
+
+.definicion h3,
+.analogia-item h3,
+
+
+.resumen h2 {
+    color: #4081c2; /* Color de los encabezados */
+    text-align: center;
+}
+
+/* Formato de párrafos */
+.definicion p,
+.analogia-item p,
+.resumen p {
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #555; /* Color del texto */
+}
+
+/* Redondeo de imágenes */
+.definicion img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.analogia-item img {
+    max-width: 60%;
+}
+
+/* Sombra */
+.definiciones,
+.analogia,
+.resumen {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Bordes */
+.resumen {
+    border: 2px solid #ccc; /* Borde del resumen */
+}
+
+/* Resumen */
+.resumen {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+
+    .definiciones,
+    .analogia,
+    .introduccion,
+    .resumen,
+    header {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .definicion,
+    .analogia-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .definicion,
+    .analogia-item {
+        flex: 1 1 100%;
+    }
+
+   
+
+    
+
+
+
+
+
+
+}
